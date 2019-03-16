@@ -1,0 +1,7 @@
+emotions:
+neutral
+happy
+sad
+hate
+anger
+

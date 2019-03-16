@@ -12,9 +12,11 @@ public class EmotionWebController {
 
     @Autowired
     EmotionRepository repository;
-    @RequestMapping("/schedule/get_all")
+
+    @RequestMapping("/emotions/get_all")
     @ResponseBody
     public Iterable<Emotion> getAll(){
         return repository.findAll();
     }
+
 }

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.9">
+    <root id="1">
+      <ServerVersion>9.5.14</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="blablacar">
+      <ObjectId>16413</ObjectId>
+    </database>
+    <database id="3" parent="1" name="card">
+      <ObjectId>16696</ObjectId>
+    </database>
+    <database id="4" parent="1" name="cosoc_video">
+      <ObjectId>16795</ObjectId>
+    </database>
+    <database id="5" parent="1" name="nuc">
+      <ObjectId>16821</ObjectId>
+    </database>
+    <database id="6" parent="1" name="oktmo">
+      <ObjectId>16672</ObjectId>
+    </database>
+    <database id="7" parent="1" name="postgres">
+      <ObjectId>12415</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <IntrospectionStateNumber>24</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="8" parent="1" name="staff">
+      <ObjectId>16650</ObjectId>
+    </database>
+    <role id="9" parent="1" name="nuc">
+      <ObjectId>16820</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="10" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="11" parent="7" name="information_schema">
+      <ObjectId>12123</ObjectId>
+    </schema>
+    <schema id="12" parent="7" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+    </schema>
+    <schema id="13" parent="7" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="14" parent="7" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+    </schema>
+    <schema id="15" parent="7" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="16" parent="7" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <IntrospectionTimestamp>2019-03-16.18:22:22.823</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3321</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="17" parent="7" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+    </access-method>
+    <access-method id="18" parent="7" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+    </access-method>
+    <access-method id="19" parent="7" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+    </access-method>
+    <access-method id="20" parent="7" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+    </access-method>
+    <access-method id="21" parent="7" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+    </access-method>
+    <access-method id="22" parent="7" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+    </access-method>
+    <sequence id="23" parent="16" name="hibernate_sequence">
+      <ObjectId>16827</ObjectId>
+      <StateNumber>3315</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="24" parent="16" name="deal">
+      <ObjectId>16384</ObjectId>
+      <StateNumber>664</StateNumber>
+    </table>
+    <table id="25" parent="16" name="disease">
+      <ObjectId>16396</ObjectId>
+      <StateNumber>1045</StateNumber>
+    </table>
+    <table id="26" parent="16" name="emotions">
+      <ObjectId>16829</ObjectId>
+      <StateNumber>3321</StateNumber>
+    </table>
+    <table id="27" parent="16" name="memes">
+      <ObjectId>16834</ObjectId>
+      <StateNumber>3321</StateNumber>
+    </table>
+    <table id="28" parent="16" name="metrics">
+      <ObjectId>16410</ObjectId>
+      <StateNumber>1081</StateNumber>
+    </table>
+    <table id="29" parent="16" name="road">
+      <ObjectId>16407</ObjectId>
+      <StateNumber>1063</StateNumber>
+    </table>
+    <table id="30" parent="16" name="transport">
+      <ObjectId>16390</ObjectId>
+      <StateNumber>668</StateNumber>
+    </table>
+    <table id="31" parent="16" name="water">
+      <ObjectId>16404</ObjectId>
+      <StateNumber>1058</StateNumber>
+    </table>
+    <column id="32" parent="24" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>664</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="33" parent="24" name="deal_name">
+      <Position>2</Position>
+      <DataType>varchar(1000)|0s</DataType>
+      <StateNumber>664</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="34" parent="25" name="date">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1045</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="35" parent="25" name="description">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1045</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="36" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3318</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="37" parent="26" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3318</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="38" parent="26" name="emotions_pkey">
+      <ObjectId>16832</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="26" name="emotions_pkey">
+      <ObjectId>16833</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>emotions_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3319</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="41" parent="27" name="filepath">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3319</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="42" parent="27" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3319</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="43" parent="27" name="emotion_id">
+      <Position>4</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3320</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <index id="44" parent="27" name="memes_pkey">
+      <ObjectId>16840</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="27" name="memes_pkey">
+      <ObjectId>16841</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>memes_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="46" parent="27" name="fk8komrie67grpftw343dnxuo9k">
+      <ObjectId>16842</ObjectId>
+      <ColNames>emotion_id</ColNames>
+      <RefTableId>16829</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>emotions</RefTableName>
+      <RefKeyName>emotions_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="47" parent="28" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1079</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="48" parent="28" name="name">
+      <Position>2</Position>
+      <DataType>varchar(127)|0s</DataType>
+      <StateNumber>1079</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="49" parent="28" name="value">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1079</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="50" parent="28" name="date">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1081</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="51" parent="29" name="data">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1063</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="52" parent="29" name="description">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>1063</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="53" parent="30" name="date">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>668</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="54" parent="30" name="description">
+      <Position>2</Position>
+      <DataType>varchar(1023)|0s</DataType>
+      <StateNumber>702</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="55" parent="31" name="date">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1058</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="56" parent="31" name="level">
+      <Position>2</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1058</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+  </database-model>
+</dataSource>

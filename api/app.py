@@ -8,9 +8,7 @@ import tensorflow as tf
 app = Flask(__name__)
 
 regressions, words_dict, text_emotion_model = load_memes_model()
-
 graph = tf.get_default_graph()
-
 
 
 
@@ -22,7 +20,7 @@ def get_pictures():
         base64_array = []
         result = predict_memes(text.get("text"), text_emotion_model, words_dict, regressions)
         for pict in result:
-            with open('./memes/'+pict+'.jpg', "rb") as image_file:
+            with open('./memes/'+pict.replace(',','').replace('?','').replace('-2','')+'.jpg', "rb") as image_file:
                 encoded = base64.b64encode(image_file.read())
                 base64_array.append(encoded.decode('utf-8'))
         json_data = json.dumps(base64_array)

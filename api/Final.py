@@ -5,18 +5,13 @@
 
 
 # standart modules
-import pickle
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 # ML
-from sklearn.linear_model import LogisticRegression
 import keras
 from keras.preprocessing.sequence import pad_sequences
-from keras.models import load_model
-from sklearn.metrics import classification_report, confusion_matrix
-import itertools, pickle
+import pickle
 MAX_SEQUENCE_LENGTH = 30 # max length of text (words) including padding
 
 emotions = ["neutral", "happy", "sad", "hate", "anger"]

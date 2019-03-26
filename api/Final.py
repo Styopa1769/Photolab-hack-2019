@@ -88,5 +88,5 @@ def predict_memes(text, text_emotion_model, words_dict, regressions):
         proba_array[j] = proba
     
     indexes = np.argsort(-proba_array)
-    return memes_df.loc[indexes[1: 4]]["name"].values
+    return memes_df.loc[indexes[0: 4]]["name"].values
 
